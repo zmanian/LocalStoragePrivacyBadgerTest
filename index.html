@@ -14,16 +14,11 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>This pages sets a local Storage super cookie. It should be blocked by Privacy badger</p>
+        <iframe src="https://zmanian.github.io/LocalStoragePrivacyBadgerTest/">
+        </iframe>
+
+
 
     </body>
-    <script>
-    window.localStorage.setItem("Evil","Very Evil")
-    if (window.localStorage.getItem('Evil') === "Very Evil"){
-        console.log("Did the evil thing");
-    }
-    else {
-        console.log("Evil was stopped");
-    }
-    </script>
+
 </html>
