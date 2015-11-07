@@ -18,12 +18,20 @@
 
     </body>
     <script>
-    window.localStorage.setItem("Evil","Very Evil")
+
     if (window.localStorage.getItem('Evil') === "Very Evil"){
-        console.log("Did the evil thing");
+        console.log("Detected a local storage super cookie from past session");
     }
     else {
-        console.log("Evil was stopped");
+        console.log("Local Storage Super Cookie not set");
+    }
+
+    window.localStorage.setItem("Evil","Very Evil")
+    if (window.localStorage.getItem('Evil') === "Very Evil"){
+        console.log("Set a local storage super cookie");
+    }
+    else {
+        console.log("Could not set a local storage super cookie");
     }
     </script>
 </html>
