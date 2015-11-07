@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>This pages sets a local Storage super cookie. It should be blocked by Privacy badger</p>
+
+    </body>
+    <script>
+    window.localStorage.setItem("Evil","Very Evil")
+    if window.localStorage.getItem('Evil') === "Very Evil"{
+        console.log("Did the evil thing");
+    }
+    else {
+        console.log("Evil was stopped");
+    }
+    </script>
+</html>
